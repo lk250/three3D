@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .button {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+    }
+
+    button.right {
+      left: 150px;
+    }
+
+    button.scale {
+      left: 300px;
+    }
+
+    button.rotate {
+      left: 450px;
+    }
+
+    button.color {
+      left: 600px;
+    }
+
+    .model {
+      position: fixed;
+      top: 60px;
+      left: 0;
+      z-index: 999;
+      display: flex;
+      height: 40px;
+      width: 100vw;
+      align-items: center;
+      gap: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <button class="right button">向右移动1</button>
+  <button class="top button">向上移动1</button>
+  <button class="scale button">放大两倍</button>
+  <button class="rotate button">旋转45度</button>
+  <button class="color button">修改颜色</button> -->
+  <div class="model">
+    <button class="move">向Z轴前进1格</button>
+    <button class="desc">随机车身颜色</button>
+    <button class="carRotate">车声旋转30度</button>
+    <button class="carScale">车身放大</button>
+    <button class="topRobot">机器人向上移</button>
+  </div>
+
+</body>
+<script type="module" src="/main.js"></script>
+
+</html>
